@@ -25,25 +25,30 @@
 <body>
     <header>
         <div class="logo" id="inicio1">
-            <img src="img/logoSorvete.png" alt="logotipo com sorvete">
+            <img src="img/logotipoPeq.png" alt="logotipo com sorvete">
             <h1 class="nombre">Bom Sorvete</h1>
         </div>
 
         <div>
             <nav>
-                <a href= "#" class="nav link">Inicio</a>
-                <a href="#hablemos1" class="nav link">Contacto</a>
-            </nav>
+                <ul class="menu">
+                    <li> <a href="#nosotros">Nosotros</a></li>
+                    <li> <a href="#lineaAsai">Línea Asaí</a></li>
+                    <li> <a href="#sabores">Sabores</a></li>
+                    <li> <a href="#">Línea Kids</a></li>
+                    <li> <a href="#hablemos">Hablemos</a></li>
+                </ul>
+            </nav> 
         </div>
     </header>
-
+    
     <main>
-        <div>
-            <center><img class= "açaiGrande" src="img/AcaiGrande.jpg" alt="Sorvete de Açaí"></center>
+        <div class="imgPrincipal">
+            <img  class= "barco" src="img/barco11.jpeg" alt="Barco de asaí">
         </div>
-        
-        <article>
-            <a href="#inicio1"><h2>Bom Sorvete</h2></a>
+
+        <section>
+            <a href="#inicio1"><h2 id="nosotros">Bom Sorvete</h2></a>
 
             <p class="inicio"> Ofrecemos al público productos que son reconocidos por su calidad, brindando una máxima satisfacción al cliente; por ello, siempre estamos en la búsqueda de una mejora continua tanto en calidad de los productos, como en la experiencia que disfruta el cliente.
                 Nuestro propósito, es procurar a quien nos elige, un momento de simple y agradable placer, volviendo a su infancia y/o creando recuerdos inolvidables a través del disfrute de un placer único en sabor, textura, aromas…<br>
@@ -51,9 +56,84 @@
                 Otra ventaja es la forma de presentar cada helado, donde el cliente tiene toda la libertad de personalizar su pedido, atreviéndose así a probar sabores y texturas distintas.<br>
                 Además también tenemos nuestro famoso helado de asaí hecho con pulpa de asaí, una fruta amazónica, alabada por sus propiedades anti vejez y energizantes y, sobre todo, por su exquisito sabor que se asemeja a una mezcla de moras y chocolate.<br>
                 Somos capaces de aunar en un solo producto la magia y el placer de un buen helado, afirmando el por qué el helado es el mejor postre del mundo.</p>
+        </section>
+
+        <section class="asai">
+            <h2 id="lineaAsai">Línea Asaí</h2>
+
+            <div  class="slider-frame">
+                <ul>
+                    <li><img src="img/açaiSolo.png" alt=""></li>
+                    <li><img src="img/açaiMadera.jpeg" alt=""></li>
+                    <li><img src="img/açaiDandi.jpg" alt=""></li>
+                    <li><img src="img/açaiTres.jpg" alt=""></li>
+                    <li><img src="img/acaiCamadas.jpg" alt=""></li>
+                    <li><img src="img/açaiVitamina.jpg" alt=""></li>
+                    <li><img src="img/açaiBarco2.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+
+        <article class="conociendo">
+            <h2>Conociendo el Asaí</h2>
+            <div class="container">
+                <img class="imagen2" src= "img/Imagem2.jpg" alt="mata de asaí">
+                <img class="imagen1" src= "img/Imagem1.jpg" alt="fruta de asaí">
+                <img class="imagen3" src= "img/Imagem3.jpg" alt="cesta con asaí">
+            </div>
+
+            <div class="linkAsai">
+                <p>Para conocer un poco más sobre esta fruta amazónica visite los siguientes artículos:👇</p>
+            <a href="https://www.bbc.com/mundo/vert-tra-46477558" target="_blank" rel="noopener"> Asaí BBC</a> <br>
+            <a href="https://nutricionyfarmacia.com/blog/dietetica/alimentos-funcionales/que-es-el-acai-la-fruta-de-la-amazonia/" target="_blank" rel="noopener">¿Para qué sirve el Acai?</a>
+            </div>
         </article>
 
-        <section class="boton" >
+        <section class="nuestrosSabores">
+            <h3 id="sabores">Nuestros Sabores</h3>
+            <div class="imgSabores">
+                <img src="img/sabores5.jpg" alt="Sabores de nuestros helados">
+            </div>
+
+            <div class="sabores">
+                <p>Además del sabor estrella "Asaí" tenemos una gran variedad de sabores que seguro te será difícil escoger</p>
+                <img src="img/sabores6.png" alt="Nombre de nuestros sabores">
+                <div class="container1">
+                    <div class="columna1">
+                        <ul>
+                            <li>Copuazú</li>
+                            <li>Chocolate</li>
+                            <li>Vainilla</li>
+                            <li>Fresa</li>
+                            <li>Guanabana</li>
+                            <li>Maracuya</li>
+                            <li>Maní</li>
+                            <li>Ovomaltine</li>
+                            <li>Piña</li>
+                            <li>Cookies</li>
+                        </ul>
+                    </div>
+
+                    <div class="columna2">
+                        <ul>
+                            <li>Coco</li>
+                            <li>Chocomenta</li>
+                            <li>Nata-Guayaba</li>
+                            <li>Frutos rojos</li>
+                            <li>Torta de limón</li>
+                            <li>Torta Suíza</li>
+                            <li>Vainilla con brownie</li>
+                            <li>Yogurt griego</li>
+                            <li>Napolitano</li>
+                            <li>Dulce de leche</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <section class="boton">
         <div class="botonCardapio">
             <a href="img/menu.jpg"download="Menu Bom Sorvete">Descargar Menú</a> <br>
             <!--<a href="doc/cardapio_guaiamum.pdf"download="Cardápio Bom Sorvete"><button type="button" name="button">Descargar</button></a>-->
@@ -61,21 +141,64 @@
         </section>
     </main>
 
-        <center><section class="hablemos" id="hablemos1">
-            <h2>Hablemos!</h2>
-            <p>
-            Aceptamos tarjetas 💳 y PIX📲<br>
-            Tenemos DELIVERY; 99 & IFOOD🛵<br>
-            Todos los días, de las 14h a las 23h🕰<br>
-            Agradecemos por la preferencia!🤝😉<br>
-            WhatsApp: (81)993332211<br>
-            Dirección: Rua da Regeneração, 1122</p>
-        </section></center>
-
         <section class="iconos">
             <a href= "mailto:yas2104@gmail.com?Subject=Su%20opinión%20nos%20importa"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
-            <a href="#"><i class="fa fa-github" aria-hidden="true"></i>
-            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+        </section>
+
+        <section class="contacto">
+            <div class="contactForm">
+                <div class="form">
+                    <div class="texto">
+                        <h2 id="hablemos">Hablemos!</h2>
+                        <p>Para cualquier duda, queja o sugerencia, contáctanos:</p>
+                    </div>
+                    
+                    <form action="">
+                        <div class="inputBox">
+                            <label for="">Tu nombre</label>
+                            <input type="text" placeholder="Nombre...">
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="">Tu email</label>
+                            <input type="email" placeholder="Email...">
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="">Tu WhatsApp</label>
+                            <input type="number" placeholder="WhatsApp...">
+                        </div>
+
+                        <div class="inputBox">
+                            <label for="">Tu mensaje</label>
+                            <textarea name="" id="" cols="30" rows="5" placeholder="Mensaje..."></textarea>
+                        </div>
+                        <input type="submit" value="Enviar Mensaje">
+                    </form>
+                </div>
+
+                <div class="info">
+                    <div class="imgBox">
+                        <img src="img/neon-ice.png" alt="Sorvete">
+                    </div>
+                    <div class="textBox">
+                        <div class="infoContact">
+                            <i class="fa-solid fa-location-dot"></i> <p>Rua da Regeneração, 1011. Recife-PE</p>
+                        </div>
+                        <div class="infoContact">
+                            <i class="fa-solid fa-phone"></i> <p>(81)993123456</p>
+                        </div>
+                        <div class="infoContact">
+                            <i class="fa-solid fa-envelope"></i> <p>yas2104@gmail.com</p>
+                        </div>
+                        <div class="infoContact">
+                            <i class="fa-solid fa-clock"></i> <p>Lunes a Sábado: 14h a 22h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
     <footer id="final"> "La vida no siempre es dulce, mas con helado puede serlo"</footer>
@@ -84,5 +207,6 @@
         <!-- La estructura básica y la vinculación con CSS estan listas. A codear! 💪  -->
     <!-- En este archivo escriban su HTML -->
 
+    <script src="main.js"></script>
 </body>
 </html>
