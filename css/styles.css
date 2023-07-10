@@ -3,6 +3,8 @@
 /* Fonts */
 /* Importar aquí la font */
 
+@import url('https://fonts.googleapis.com/css2?family=Poltawski+Nowy&display=swap');
+
 
 
 /* Aquí les dejamos como ayuda este "reset" en el cual ajustamos algunas propiedades
@@ -38,8 +40,84 @@ main {
     margin: 0;
 }
 
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 20vh;
+    background-color: #971869;
+}
 
-header  {
+/* NAVIGATION  */
+
+nav {
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo1 {
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.logo1 img{
+    display: flex;
+    align-items: center;
+}
+
+.bar-btn {
+    font-size: 25px;
+    color: #ecabec;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.nav-menu {
+    position: fixed;
+    width: 100%;
+    height: 0vh;
+    top: 100px;
+    background: rgba(146, 144, 144, 0.95);
+    text-align: center;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.nav-menu li {
+    display: none;
+    line-height: 30px;
+    margin: 50px 0;
+    transition: all .5s;
+}
+
+.nav-menu li a {
+    color: #fff;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+    color: #f148b3;
+    transition: .3s;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked ~ .nav-menu {
+    height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+    display: block;
+}
+/*header  {
     display: flex;
     justify-content: space-between;
     height: 60px;
@@ -83,7 +161,7 @@ nav{
     background: #f148b3;
     color: #fcf6f9;
     border-radius: 15px;
-}
+}*/
 
 
 /*nav a {
@@ -95,13 +173,66 @@ nav a :hover {
     color: #fbfbfb;
 }*/
 
+/* RESPONSIVE PARA DESKTOP */
+
+@media screen and (min-width: 768px) {
+    .logo1 {
+        margin-left: 50px;
+    }
+
+    nav {
+        height: 100px;
+    }
+
+    .bar-btn {
+        display: none;
+    }
+
+    .nav-menu {
+        position: relative;
+        height: 100px;
+        top: 0;
+        background: none;
+        transition: none;
+        text-align: right;
+        margin-right: 50px;
+    }
+
+    .nav-menu li {
+        display: inline-block;
+        line-height: 100px;
+        margin: 0 20px;
+        transition: none;
+    }
+
+    .nav-menu li a {
+        font-size: 12px;
+    }
+}
+
 .barco{
-    transform: rotate(180deg);
     display: flex;
     width: 100%;
     height: 80%;
     justify-content: center;
     align-items: center; 
+}
+
+.inicio {
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.2;
+    margin-top: 4%;
+    margin-bottom: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h2 {
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 28px;
+    text-align: center;
 }
 
 .asai {
@@ -111,10 +242,11 @@ nav a :hover {
 
 #lineaAsai {
     padding-top: 20px;
+    margin-top: 5%;
 }
 
 .slider-frame {
-    width: 800px;
+    width: 600px;
     height: auto;
     margin: 50px auto 0;
     overflow: hidden;
@@ -158,6 +290,21 @@ nav a :hover {
     100% {margin-left: -600%;}
 }
 
+/* Pantallas largas */
+
+@media only screen and (max-width: 850px) {
+    .slider-frame {
+        width: 600px;
+    }
+}
+
+/* Laptops y Tablets */
+@media only screen and (max-width: 650px) {
+    .slider-frame {
+        width: 400px;
+    }
+}
+
 .conociendo {
     margin-top: 100px;
 }
@@ -187,18 +334,21 @@ nav a :hover {
 }
 
 .linkAsai {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 15px;
-    margin-left: 5%;
+    font-family: 'Poltawski Nowy', serif;
+    font-size: 18px;
+    margin-left: 10%;
+}
+.linkAsai a {
+    color: blue;
 }
 
 .nuestrosSabores {
-    margin-top: 80px;
+    margin-top: 60px;
 }
 
 h3 {
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 20px;
     font-size: 25px;
     font-family: 'Poltawski Nowy', serif;
 }
@@ -207,49 +357,32 @@ h3 {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 800px
+    height: 800%;
+}
+
+.imagenSabores {
+    width: 80%;
+    height: 90%;
 }
 
 .sabores {
     font-family: 'Poltawski Nowy', serif;
     font-size: 18px;
+    margin-left: 20%;
 }
 
-.container1 {
+.sabores p {
+    margin-top: 50px;
+}
+.saboresNombres {
     display: flex;
+    align-items: center;
     justify-content: center;
-    border-style: dotted;
-    background-color: #e6c0e6;
+    width:70%;
+    height: 80%;
+    margin-left: 5%;
 }
 
-.columna1 {
-    background-color: #e6c0e6;
-    padding: 30px 30px;
-    align-items: center;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-
-.columna2 {
-    background-color: #e6c0e6;
-    padding: 30px 30px;
-    align-items: center;
-    letter-spacing: 2px;
-    font-weight: 700;
-}
-
-/*.img1{
-    align-items: center;
-}*/
-
-.inicio {
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    text-align: justify;
-    line-height: 1.2;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
 
 .boton{
     display: flex;
@@ -276,35 +409,7 @@ h3 {
     color: #971869;
 }
 
-h2 {
-    font-family: 'Lato', sans-serif;
-    font-size: 28px;
-    text-align: center;
-}
-
-.iconos {
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.iconos a {
-    text-decoration: none;
-    font-size: 50px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    text-align: center;
-    border-radius: 50%;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5)
-    transition
-}
-
-.iconos a:hover {
-transform: scale(1.2);
-}
+/********Formulario*********/
 
 .contacto {
     position: relative;
@@ -312,8 +417,9 @@ transform: scale(1.2);
     height: 100vh;
     display: grid;
     place-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 150px;
 }
+
 section .contactForm {
     position: relative;
     display: grid;
@@ -452,6 +558,19 @@ section .contactForm .info .textBox .infoContact p {
     color: #797778
 }
 
+/* REDES SOCIALES */
+
+section .contactForm .info .rrss a {
+    padding: 20px;
+    font-size: 2em;
+    color: #4e4a4c;
+    transition: 0.3s;
+}
+
+section .contactForm .info .rrss a:hover {
+    color: #000000;
+}
+
 /* Breakpoints*/
 
 /* -- Pantallas largas -- */ 
@@ -465,6 +584,7 @@ section .contactForm .info .textBox .infoContact p {
 /* -- Laptops y Tablets -- */
 
 @media only screen and (max-width:768px) {
+
     section .contactForm.info {
         height: 300px;
         padding: 20px;
@@ -487,10 +607,8 @@ section .contactForm .info .textBox .infoContact p {
         margin-bottom: 30px;
         color: #f148b3;
     }
-
-section .contactForm .info .textBox .infoContact p{
-
 }
+
 
 footer {
     height: 90px;
@@ -498,7 +616,7 @@ footer {
     color: aliceblue;
     font-family: 'Poltawski Nowy', serif;
     font-style: italic;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     display: grid;
     place-items: center;
