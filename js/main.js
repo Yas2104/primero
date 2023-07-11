@@ -1,14 +1,22 @@
-const navMenu = document.querySelector('.nav-menu');
+const navMenu = document.querySelector('.nav-menu').querySelectorAll("a");
+// console.log(navMenu)
 
-const menuItems = document.querySelectorAll('.menu-item');
+// const menuItems = document.querySelectorAll('.menu-item');
 
 
 
 
-menuItems.forEach(function(item) {
-    item.addEventListener('click', function(e) {
-        const navMenu = document.querySelector('.active');
-        navMenu.classList.remove('.active');
-        e.target.classList.add('active');
+navMenu.forEach(element => {
+    
+    element.addEventListener('click', function() {
+        navMenu.forEach(nav=>nav.classList.remove('active'));
+
+        this.classList.add('active');
     });
 });
+
+
+window.addEventListener("scroll",function(){
+    var header = document.querySelector("header");
+    header.classList.toggle("abajo",window.scrollY>0)
+})
